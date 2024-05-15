@@ -46,10 +46,25 @@ function sendMail() {
       email: document.getElementById("email").value,
       message: document.getElementById("message").value,
     };
-  
+	
+	const nameRange = /^[a-zA-Z]+$/;
+	const emailRange = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$";
+	const numRange = /^0-9]+$/;
     const serviceID = "service_wdij9sr"; 
     const templateID = "template_895w0eq";
-  
+	if(name === "" || !nameRange.test(name)) {
+		alert("Please enter a valid name.")
+		document.getElementById("name").value = "";
+
+	}
+	if(email ==="" || !emailRange.test(email)) {
+		alert("Please enter a valid name.")
+		document.getElementById("email").value = "";
+	}
+	if(Number ==="" || !emailRange.test(email)) {
+		alert("Please enter a valid name.")
+		document.getElementById("email").value = "";
+	}
       emailjs.send(serviceID, templateID, params)
       .then(res=>{
           document.getElementById("name").value = "";
@@ -62,4 +77,12 @@ function sendMail() {
       .catch(err=>console.log(err));
 	
   }
-  
+
+function resetFields() {	
+	
+		document.getElementById("name").value = "";
+		document.getElementById("email").value = "";
+		document.getElementById("message").value = "";
+}
+
+
