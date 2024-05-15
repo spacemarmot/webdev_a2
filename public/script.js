@@ -68,7 +68,7 @@ function sendMail() {
 			document.getElementById("email").value = "";
 		}
 		else {
-			if(phone ==="" || !numRange.test(phoneNum)) {
+			if(phone ==="" || !numRange.test(phone)) {
 				alert("Please enter a valid phone number.")
 				document.getElementById("phoneNum").value = "";
 			}
