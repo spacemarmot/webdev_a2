@@ -73,19 +73,18 @@ function sendMail() {
 				alert("Please enter a valid phone number.")
 				document.getElementById("phoneNum").value = "";
 			}
-			else {
+			else{
 				 emailjs.send(serviceID, templateID, params)
-     			 then(res=>{
+     			.then(res => {
 					document.getElementById("name").value = "";
 					document.getElementById("email").value = "";
 					document.getElementById("message").value = "";
-					document.getElementById("phone").value = "";
+					document.getElementById("phoneNum").value = "";
 					console.log(res);
-					
-					alert("Your message sent successfully!!")
-		
+
+					alert("Your message sent successfully!!");
 				})
-				.catch(err=>console.log(err));
+				.catch(err => console.log(err));
 			}
 		}
 		
