@@ -32,7 +32,22 @@
             display: table;
             clear: both;
         }
+        .login_content {
+            text-align: center;
+        }
+        .login_content form {
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+        .login_content h1 {
+            padding-top: 1%;
+        }
         
+        .login_content button {
+            margin-bottom: 3%;
+            margin-top: 1%;
+        }
+
         .login {
             position: absolute;
             top: 10px;
