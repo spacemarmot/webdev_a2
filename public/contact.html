@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aotearoa Digital KiwiTech Innovations</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/function.js"></script>
+	<script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>  <!-- imports email thing -->
+	<script src= "script.js"></script> <!-- calls js file --> 
+	<script type="text/javascript"> <!-- token authentication for emailJS to use
+		(function(){
+		emailjs.init("zM22-4vuBt9OQpCFJ");})(); 
+    </script>
+</head>
+<body>
+ 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+ 
+    <div class="login">
+        <a href="https://www.google.com">Login</a> | <a href="#">Create new account</a>
+    </div>
+
+    <div class="header">
+		<h1><a href="index.html" data-toggle="tooltip" title="KiwiTech & Aotearoa Digital">Aotearoa Digital<br>KiwiTech Innovations</a></h1>
+    </div>
+
+
+    <div class="navbar">
+	    <a href="about.html" data-toggle="tooltip" title="Learn more about us!">About</a>
+	    <a href="#" data-toggle="tooltip" title="Explore our services and expertise!">Services/Expertise</a>
+	    <a href="#" data-toggle="tooltip" title="Get in touch!">Contact</a>
+	</div>
+	<div class="container"> 
+		<div class="row justify-content-center"> 
+		  <div class="col-md-8">
+			<div class="py-3">
+			  <h1>Contact form</h1>
+			  <div class="form-group">
+				<h5 for="name">Name</h5>
+				<input
+				  type="text"
+				  class="form-control"
+				  id="name"
+				  placeholder="Enter name"
+				/>
+			  </div>
+			  <div class="form-group">
+				<h5 for="email">Email</h5>
+				<input
+				  type="email"
+				  class="form-control"
+				  id="email"
+				  placeholder="Enter email"
+				/>
+			  </div>
+			  <div class="form-group">
+				<h5 for="message">Message</h5>
+				<textarea class="form-control" id="message" rows="3"></textarea>
+			  </div>
+			  <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+			</div>
+		  </div>
+	</div>
+    <div class="content">
+        <a>Contact us</a>
+		<div class="row mt-4"> <!-- Add margin top for separation -->
+        <div class="col-md-4">
+			<a>Matthew Herbert</a>
+            <div class="card" onclick="flipCard1(this)">
+				<div class = "card-inner">
+					<div class= "card-front">
+						<div class="card-body">
+							<img  src="images\mh.png" alt="sample image for 1">
+						</div>
+					</div>
+					<div class="card-back">
+						<div class="card-body">
+							<h5 class="card-title">Back of Card 1</h5>
+							<p class="card-text">This is the back side of the card.</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+        </div>
+        <div class="col-md-4">
+			<a>Michael Nelson</a>
+            <div class="card" onclick="flipCard2(this)">
+				<div class = "card-inner">
+					<div class= "card-front">
+						<div class="card-body">
+							<img  src="images\mn.gif" alt="sample image for 1">
+						</div>
+					</div>
+					<div class="card-back">
+						<div class="card-body">
+							<h5 class="card-title">Back of Card 1</h5>
+							<p class="card-text">This is the back side of the card.</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+        </div>
+        <div class="col-md-4">
+			<a>Kai Hardman</a>
+            <div class="card" onclick="flipCard3(this)">
+				<div class = "card-inner">
+					<div class= "card-front">
+						<div class="card-body">
+							<img  src="images\kh.png" alt="sample image for 1">
+						</div>
+					</div>
+					<div class="card-back">
+						<div class="card-body">
+							<h5 class="card-title">Back of Card 1</h5>
+							<p class="card-text">This is the back side of the card.</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+<div>
+	<footer>
+		<div>
+			<p>&copy;KiwiTech Innovations 2024<br>
+			Contact @ kiwitech@atdigital.co.nz</p>
+		</div>
+		
+	</footer>
+</div>
+
+</html>
+
+
+
+
+
+
+
+
