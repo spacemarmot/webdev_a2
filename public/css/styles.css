@@ -106,5 +106,35 @@
 			
 		}
         
-        
+        .card {
+			perspective: 1000px;
+			width:100%;
+			height:350px;
+			
+		}
+
+		.card .card-inner {
+			width: 100%;
+			height: 100%;
+			transition: transform 0.2s;
+			transform-style: preserve-3d;
+			color: black;
+		}
+		
+		
+		.card .card-front,
+		.card .card-back {
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+			position: absolute;
+		}
+
+		.card .card-back {
+			transform: rotateY(180deg);
+		}	
+			
+		.card-img {
+			max-height: 300px;
+		}
       
