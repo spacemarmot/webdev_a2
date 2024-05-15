@@ -18,6 +18,23 @@
             font-size: 24px;
             border-bottom: 1px solid white;
         }
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+        .column p {
+            width: 50%;
+            padding-left: 25%;
+            padding-right: 25%;
+            background-color: white;
+            color: black;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
         .login {
             position: absolute;
             top: 10px;
