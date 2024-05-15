@@ -45,36 +45,50 @@ function sendMail() {
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
       message: document.getElementById("message").value,
+	  phone: document.getElementById("phoneNum").value,
     };
 	
-	const nameRange = /^[a-zA-Z]+$/;
-	const emailRange = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$";
-	const numRange = /^0-9]+$/;
+	const nameRange = /^[A-Za-z]+$/;
+	const emailRange = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	const numRange = /^\d{3}\s\d{3}\s\d{4}$/;
     const serviceID = "service_wdij9sr"; 
     const templateID = "template_895w0eq";
+	let name = document.getElementById("name").value
+	let email = document.getElementById("email").value
+	let phone = document.getElementById("phoneNum").value
 	if(name === "" || !nameRange.test(name)) {
 		alert("Please enter a valid name.")
 		document.getElementById("name").value = "";
 
 	}
-	if(email ==="" || !emailRange.test(email)) {
-		alert("Please enter a valid name.")
-		document.getElementById("email").value = "";
-	}
-	if(Number ==="" || !emailRange.test(email)) {
-		alert("Please enter a valid name.")
-		document.getElementById("email").value = "";
-	}
-      emailjs.send(serviceID, templateID, params)
-      .then(res=>{
-          document.getElementById("name").value = "";
-          document.getElementById("email").value = "";
-          document.getElementById("message").value = "";
-          console.log(res);
-          alert("Your message sent successfully!!")
+	else {
+		alert
+		if(email ==="" || !emailRange.test(email)) {
+			alert("Please enter a valid email.")
+			document.getElementById("email").value = "";
+		}
+		else {
+			if(phone ==="" || !numRange.test(phoneNum)) {
+				alert("Please enter a valid phone number.")
+				document.getElementById("phoneNum").value = "";
+			}
+		}
+		
+		// emailjs.send(serviceID, templateID, params)
+     	// .then(res=>{
+			//document.getElementById("name").value = "";
+			//document.getElementById("email").value = "";
+			//document.getElementById("message").value = "";
+			//document.getElementById("phoneNum").value = "";
+			//console.log(res);
+			//alert("Your message sent successfully!!")
   
-      })
-      .catch(err=>console.log(err));
+      		//})
+      		//.catch(err=>console.log(err));
+	}
+	
+
+      
 	
   }
 
@@ -83,6 +97,7 @@ function resetFields() {
 		document.getElementById("name").value = "";
 		document.getElementById("email").value = "";
 		document.getElementById("message").value = "";
+		document.getElementById("phoneNum").value = "";
 }
 
 
