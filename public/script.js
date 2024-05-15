@@ -50,7 +50,8 @@ function sendMail() {
 	
 	const nameRange = /^[A-Za-z]+$/;
 	const emailRange = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-	const numRange = /^\d{3}\s\d{3}\s\d{4}$/;
+	const numRangeS = /^\d{3}\s\d{3}\s\d{4}$/; // num range including spaces e.g: 123 456 7890
+	const numRange = /^\d{3}\d{3}\d{4}$/; // num range with no spaces e.g: 1234567890
     const serviceID = "service_wdij9sr"; 
     const templateID = "template_895w0eq";
 	let name = document.getElementById("name").value
@@ -68,7 +69,7 @@ function sendMail() {
 			document.getElementById("email").value = "";
 		}
 		else {
-			if(phone ==="" || !numRange.test(phone)) {
+			if(phone ==="" || (!numRangeS.test(phone) && !numRange.test(phone))) {
 				alert("Please enter a valid phone number.")
 				document.getElementById("phoneNum").value = "";
 			}
