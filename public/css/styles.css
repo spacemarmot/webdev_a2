@@ -23,13 +23,13 @@
             width: 30%;
             margin-left: 2%;
             margin-bottom: 5%;
-            padding-bottom: 20%;
+            padding-bottom: 2%;
             background-color: white;
             color: black;
         }
         .column img {
-            width: 1%;
-            height: 1%;
+            max-width: 50%;
+            height: auto;
         }
         .row:after {
             content: "";
