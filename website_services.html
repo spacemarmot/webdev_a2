@@ -4,33 +4,61 @@
 	    <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <title>Aotearoa Digital KiwiTech Innovations</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/footer.css">
 		<!-- script function for the reactive tooltips on navbar -->
 		<script src="js/function.js"></script>
 	</head>
+
+			<!-- header function -->
+		    <center>
+			    <div class="header">
+					<h1><a href="index.html" data-toggle="tooltip" title="KiwiTech & Aotearoa Digital">Aotearoa Digital<br>KiwiTech Innovations</a></h1>
+			    </div>
+		    </center>
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+				  <a class="navbar-brand" href="#">KiwiTech Innovations</a>
+				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+			 	<div id="navb" class="navbar-collapse collapse hide">
+				 	<!-- navbar function -->
+				    
+				    <ul class="navbar-nav">
+					    <ul class="nav-item active">
+					    	<a class="nav-link" href="index.html">Home</a>
+					    </ul>
+					    <ul class="nav-item">
+					    	<a class="nav-link" href="about.html">About</a>
+					    </ul>
+					    <ul class="nav-item">
+					    	<a class="nav-link" href="website_services.html">Services</a>
+					    </ul>
+					    <ul class="nav-item">
+					    	<a class="nav-link" href="contact.html">Contact</a>
+					    </ul>
+					</ul>
+					<ul class="nav navbar-nav ml-auto">
+				      <li class="nav-item">
+				        <a class="nav-link" href="#"><span class="fas fa-sign-in-alt"></span> Login</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#"><span class="fas fa-user"></span> Sign Up</a>
+				      </li>
+				    </ul>
+				 </div>
+				</nav>
 	
-	<body>
-		<!-- script headers for bootstrap -->
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-		<!-- login function -->
-	    <div class="login">
-	        <a href="login.html" data-toggle="tooltip" title="Welcome Back!">Login</a> | <a href="#" data-toggle="tooltip" title="Create a New Account!">Create new account</a>
-	    </div>
-		<!-- header function -->
-	    <div class="header">
-			<h1><a href="index.html" data-toggle="tooltip" title="KiwiTech & Aotearoa Digital">Aotearoa Digital<br>KiwiTech Innovations</a></h1>
-	    </div>
+	<body class="d-flex flex-column min-vh-100">
 
 
-	 	<!-- navbar function -->
-	    <div class="navbar">
-		    <a href="index.html" data-toggle="tooltip" title="Homepage">Home</a>
-		    <a href="about.html" data-toggle="tooltip" title="Learn more about us!">About</a>
-		    <a href="website_services.html" data-toggle="tooltip" title="Explore our services and expertise!">Services/Expertise</a>
-		    <a href="contact.html" data-toggle="tooltip" title="Get in touch!">Contact</a>
-		</div>
+
+
 
 	    <h2>Our Services:</h2>
 	    <div class="content">
@@ -54,13 +82,13 @@
 	    </div>
 		    
 	</body>
-	
 	<footer>
-			<!-- footer w/ tooltip and contact page reference -->
-			<div class="footer">
-		        <p><a href="contact.html" data-toggle="tooltip" title="KiwiTech & Aotearoa Digital">&copy;KiwiTech Innovations 2024<br>
-		        Contact @ kiwitech@atdigital.co.nz</p>
-		    </div>
+		
+		<!-- footer w/ tooltip and contact page reference -->
+		<div class="footer">
+	        <p><a href="contact.html" data-toggle="tooltip" title="KiwiTech & Aotearoa Digital">&copy;KiwiTech Innovations 2024<br>
+	        Contact @ kiwitech@atdigital.co.nz</p>
+	    </div>
 		
 	</footer>
 </html>
