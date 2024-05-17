@@ -9,12 +9,12 @@
     document.addEventListener('DOMContentLoaded', function() {
         const hoverImage = document.getElementById('wide');
         const audio = document.getElementById('audio');
-    
+		audio.volume = 0.1;    
         hoverImage.addEventListener('mouseenter', function() {
       
             audio.play();
         });
-    
+    	
         hoverImage.addEventListener('mouseleave', function() {
             audio.pause();
         });
