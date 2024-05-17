@@ -1,0 +1,140 @@
+@charset "UTF-8";
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 24px;
+            border-bottom: 1px solid white;
+        }
+        .column {
+            float: left;
+            width: 30%;
+            margin-left: 2%;
+            margin-bottom: 5%;
+            padding-bottom: 2%;
+            background-color: white;
+            color: black;
+        }
+        .column img {
+            max-width: 50%;
+            height: auto;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .login_content {
+            text-align: center;
+        }
+        .login_content form {
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+        .login_content h1 {
+            padding-top: 1%;
+        }
+        
+        .login_content button {
+            margin-bottom: 3%;
+            margin-top: 1%;
+        }
+
+        .login {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 1%;
+            border: 1px solid white;
+            text-decoration: none;
+        }
+        .login a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .content {
+            position: relative;
+            margin-top: 20px;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 2%;
+        }
+        .content_about {
+            position: relative;
+            margin-top: 20px;
+            vertical-align: middle;
+        }
+        .content_about img {
+            width: auto;
+            height: 15%;
+        }
+        .content_about P {
+            font-family: comic sans-serif;
+            vertical-align: middle;
+            font-size: 24px;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 3%;
+            background-color: white;
+            color: black;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: sticky;
+            bottom: 0px;
+            width: 100%;
+        }
+        .h1 {
+			margin-right: 100%;
+			
+		}
+        
+        .card {
+			perspective: 1000px;
+			width:100%;
+			height:350px;
+			
+		}
+
+		.card .card-inner {
+			width: 100%;
+			height: 100%;
+			transition: transform 0.2s;
+			transform-style: preserve-3d;
+			color: black;
+		}
+		
+		
+		.card .card-front,
+		.card .card-back {
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+			position: absolute;
+		}
+
+		.card .card-back {
+			transform: rotateY(180deg);
+		}	
+			
+		.card-img {
+			max-height: 300px;
+		}
+      
