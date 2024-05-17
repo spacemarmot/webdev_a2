@@ -58,25 +58,26 @@
 		
 			<content>
 				<div class="content">
-		        	<img style="max-width: 100px; max-height: 100px" src="images\rat.png" alt="Login Rat"class="img-fluid" data-toggle="tooltip" title="Sign Up Rat">
+		        	<img style="max-width: 100px; max-height: 100px" src="images\rat.png" alt="Sign Up Rat"class="img-fluid" data-toggle="tooltip" title="Sign Up Rat">
 		    	</div>						
-			    <div class="login_content">				
-					<h1>Sign Up</h1>
-			        <p>Please enter your details below.</p>
-					<form>
-						<input type="text" placeholder="First Name">
-					</form>
-					<form>
-						<input type="text" placeholder="Email">
-					</form>
-					<form>
-						<input type="text" placeholder="Username">
-					</form>
-					<form>
-						<input type="text" placeholder="Password">
-					</form>
-					<button><a href="404.html">Sign in</a></button>			
-			    </div>
+		    <div class="login_content">				
+				<h1>Sign Up</h1>
+		        <p>Please enter your details below</p>
+				<form action="login.html" method="get">
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="fname" required placeholder="First Name">
+					<br>
+					<label for="email">Email Add.</label>
+					<input type="text" id="email" name="email" required placeholder="Email">
+					<br>					
+					<label for="name">Username</label>
+					<input type="text" id="name" name="name" required placeholder="Username">
+					<br>
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" required placeholder="Password">
+					<br>
+					<button type="submit">Submit</button>
+				</form>	
 		   </content>
 	
 	</body>
