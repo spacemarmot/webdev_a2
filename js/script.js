@@ -1,44 +1,12 @@
-let click1 = 0;
-let click2 = 0;
-let click3 = 0;
-function flipCard1(card) {
 
-	
-	if (click1 === 0) {
-		card.querySelector('.card-inner').style.transform = 'rotateY(180deg)';
-		click1 = 1;
-	}
-	else if (click1 === 1) {
-		card.querySelector('.card-inner').style.transform = 'rotateY(0deg)';
-		click1 = 0;
-	}
+//function to flip the cards around when hovered over
+function flipCard(card) {
+	card.querySelector('.card-inner').style.transform = 'rotateY(180deg)';
 }
-function flipCard2(card) {
+function rotateCard(card) {
+	card.querySelector('.card-inner').style.transform = 'rotateY(0deg)';
 
-	
-	if (click2 === 0) {
-		card.querySelector('.card-inner').style.transform = 'rotateY(180deg)';
-		click2 = 1;
-	}
-	else if (click2 === 1) {
-		card.querySelector('.card-inner').style.transform = 'rotateY(0deg)';
-		click2 = 0;
-	}
 }
-function flipCard3(card) {
-
-	
-	if (click3 === 0) {
-		card.querySelector('.card-inner').style.transform = 'rotateY(180deg)';
-		click3 = 1;
-	}
-	else if (click3 === 1) {
-		card.querySelector('.card-inner').style.transform = 'rotateY(0deg)';
-		click3 = 0;
-	}
-}
-
-
 
 function sendMail() {
     var params = {
