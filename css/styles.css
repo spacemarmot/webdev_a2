@@ -67,7 +67,7 @@
         }
         .column img {
             max-width: 50%;
-            height: auto;
+            height: 50%;
         }
         .row:after {
             content: "";
@@ -175,4 +175,9 @@
 		.card-img {
 			max-height: 300px;
 		}
+		
+		.service-img {
+			size: 10%;
+		}
+		
       
