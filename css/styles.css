@@ -18,6 +18,44 @@
             font-size: 24px;
             border-bottom: 1px solid white;
         }
+        .column_sign {
+            float: left;
+            width: 48%;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-bottom: 5%;
+            background-color: white;
+            color: black;
+        }
+        .userinput_top {
+            margin-top: 22%;
+        }
+        .cwdd {
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        .cwdd h2{
+            text-align: left;
+            padding-left: 40%;
+        }
+        .cwdd p{
+            text-align: left;
+            padding-left: 40%;
+            font-weight: bold;
+        }
+        .cwdd button {
+            margin-top: 1%;
+        }
+        .cwdd_img { /*im done trying to get this simple class to make the img smaller im putting css in the htlp */
+            padding-top: 4%;
+            width: 1%;
+            height: 1%;
+        }
+        .row_sign:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
         .column {
             float: left;
             width: 30%;
