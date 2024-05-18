@@ -14,10 +14,11 @@
 		<script src="js/function.js"></script>
 		<script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>  <!-- imports email thing -->
 		<script src= "js/script.js"></script> <!-- calls js file --> 
-		<script type="text/javascript"> <!-- token authentication for emailJS to use
-			(function(){
+		<!-- token authentication for emailJS to us-->
+		<script type="text/javascript">
+			(function(){  
 			emailjs.init("zM22-4vuBt9OQpCFJ");})(); 
-	    </script>
+	   	</script>
 	</head>
 			<!-- header function -->
 		    <center>
@@ -61,12 +62,7 @@
 				 </div>
 				</nav>
 	<body class="d-flex flex-column min-vh-100">
-	 	<div>
-
-		
-
-		
-			<div class="container"> 
+			<div class="container"> <!-- class for the contact form. this is where the users will input their name, email, phone number and message and send it to the email-->
 				<div class="row justify-content-center"> 
 				  <div class="col-md-8">
 					<div class="py-3">
@@ -102,7 +98,7 @@
 						<h5 for="message">Message</h5>
 						<textarea class="form-control" id="message" rows="3"></textarea>
 					  </div>
-					  
+					   <!-- buttons for calling the sendMail() and resetFields() functions-->
 					  <button class="btn btn-primary" onclick="sendMail()">Submit</button>
 					  <button class= "btn btn-primary" onclick="resetFields()">Reset</button>
 					</div>
@@ -113,7 +109,7 @@
 				<div class="row mt-4"> <!-- Add margin top for separation -->
 		        <div class="col-md-4">
 					<a>Matthew Herbert</a>
-		            <div class="card" onmouseenter="flipCard(this)" onmouseleave="rotateCard(this)">
+		            <div class="card" onmouseenter="flipCard(this)" onmouseleave="rotateCard(this)"> <!-- events for rotating the cards when hovering over the images and for changing back when not hovering over-->
 						<div class = "card-inner">
 							<div class= "card-front">
 								<div class="card-body">
