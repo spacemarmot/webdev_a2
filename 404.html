@@ -11,7 +11,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/footer.css">
-		<audio id="audio" src="audio/wideRat.mp3" loop></audio>
+		<audio id="audio" src="audio/wideRat.mp3" loop></audio> <!-- audio that is played when hovering over Error Rat-->
 		<!-- script function for the reactive tooltips on navbar -->
 		<script src="js/function.js"></script>
 	</head>
@@ -63,10 +63,10 @@
 	    <div class="content">
 
 
-		    
-		    <img src="images/notReal.png" alt="Error Rat" class="img-fluid" data-toggle="tooltip" title="W I D E _ R A T" id="wide" onclick="Skele()">
-			<img src="images/ok.gif" alt="doot doot" class="img-fluid" data-toggle="tooltip" title="SKeleDoot" id="skeleRat" hidden>
-			<img src="images/luzard.gif" alt="around the world" class="img-fluid" data-toggle="tooltip" title="luzard" id="luzard" hidden>
+		    <!-- images for the page-->
+		    <img src="images/notReal.png" alt="Error Rat" class="img-fluid" data-toggle="tooltip" title="W I D E _ R A T" id="wide" onclick="Skele()"> <!-- image always shown. when clicked calls the skele() function  which shows the skeleDoot image-->
+			<img src="images/ok.gif" alt="doot doot" class="img-fluid" data-toggle="tooltip" title="SKeleDoot" id="skeleRat" hidden> <!-- image hidden until Error Rat is clicked.-->
+			<img src="images/luzard.gif" alt="around the world" class="img-fluid" data-toggle="tooltip" title="luzard" id="luzard" hidden> <!-- image hidden until skeleDoot is clicked-->
 
 
 	        <h1>ERROR 404: CONTENT NOT FOUND</h1>
