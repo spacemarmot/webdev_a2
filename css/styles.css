@@ -1,4 +1,5 @@
 @charset "UTF-8";
+        /*body content*/
         body {
             background-color: black;
             color: white;
@@ -6,11 +7,13 @@
             text-align: center;
             margin: 0;
         }
+        /*navbar content*/
         .navbar {
             display: flex;
             justify-content: center;
             padding: 10px;
         }
+        /*make colour white and aplise text atrobusts to every thing in the navbar which is text*/
         .navbar a {
             color: white;
             text-decoration: none;
