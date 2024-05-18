@@ -18,6 +18,7 @@
             font-size: 24px;
             border-bottom: 1px solid white;
         }
+        /*holds colum contec on services page in a box*/
         .column_sign {
             float: left;
             width: 48%;
@@ -27,35 +28,7 @@
             background-color: white;
             color: black;
         }
-        .userinput_top {
-            margin-top: 22%;
-        }
-        .cwdd {
-            margin-left: 1%;
-            margin-right: 1%;
-        }
-        .cwdd h2{
-            text-align: left;
-            padding-left: 40%;
-        }
-        .cwdd p{
-            text-align: left;
-            padding-left: 40%;
-            font-weight: bold;
-        }
-        .cwdd button {
-            margin-top: 1%;
-        }
-        .cwdd_img { /*im done trying to get this simple class to make the img smaller im putting css in the htlp */
-            padding-top: 4%;
-            width: 1%;
-            height: 1%;
-        }
-        .row_sign:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+        /*builds a column that pushes the other 2 columns on top of that in to the prefeus column */
         .column {
             float: left;
             width: 30%;
@@ -65,31 +38,36 @@
             background-color: white;
             color: black;
         }
+        /*sets img in column to the right size*/
         .column img {
             max-width: 50%;
             height: 50%;
         }
+        /*bugfixing*/
         .row:after {
             content: "";
             display: table;
             clear: both;
         }
+        /*sets everything to the centre*/
         .login_content {
             text-align: center;
         }
+        /*give space to login page content*/
         .login_content form {
             padding-top: 1%;
             padding-bottom: 1%;
         }
+        /*adds padding to the title in login's content*/
         .login_content h1 {
             padding-top: 1%;
         }
-        
+        /*puts a space around the button*/
         .login_content button {
             margin-bottom: 3%;
             margin-top: 1%;
         }
-
+        /*puts the login butten where it needs to go*/
         .login {
             position: absolute;
             top: 10px;
@@ -98,29 +76,35 @@
             border: 1px solid white;
             text-decoration: none;
         }
+        /*colour for the (a) text in login*/
         .login a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
         }
+        /*atobustes aplied to everything on all pagese*/
         .content {
             position: relative;
             margin-top: 20px;
         }
+        /*atobustes aplied to img on all pagese*/
         .content img {
             width: 100%;
             height: auto;
             margin-bottom: 2%;
         }
+        /*atobustes aplied to everything on all about page*/
         .content_about {
             position: relative;
             margin-top: 20px;
             vertical-align: middle;
         }
+         /*atobustes aplied to img on all about page*/
         .content_about img {
             width: auto;
             height: 15%;
         }
+        /*text cunsmoation for everything p in the about page*/
         .content_about P {
             font-family: comic sans-serif;
             vertical-align: middle;
@@ -131,6 +115,7 @@
             background-color: white;
             color: black;
         }
+        /*the fotter content*/
         .footer {
             background-color: #333;
             color: white;
@@ -139,6 +124,7 @@
             bottom: 0px;
             width: 100%;
         }
+        /*all h1 marjin sets*/
         .h1 {
 			margin-right: 100%;
 			
